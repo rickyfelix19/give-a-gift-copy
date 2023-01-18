@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="586dp"
+        android:paddingVertical="61dp"
+        android:orientation="vertical"
+        android:background="@drawable/payment_success_background">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_payment_success_checkilist"/>
+
+        <TextView
+            style="@style/InterHeading5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/cta_main"
+            android:layout_marginBottom="16dp"
+            android:text="Payment Successful!"/>
+
+        <TextView
+            style="@style/InterSubtitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="100dp"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:text="Wrapping your gift now"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="90dp"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="22dp"
+            android:gravity="center">
+            <LinearLayout
+                style="@style/TextStyle3"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_6"
+                android:onClick="onReturnHome">
+
+                <TextView
+                    style="@style/RobotoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return Home"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

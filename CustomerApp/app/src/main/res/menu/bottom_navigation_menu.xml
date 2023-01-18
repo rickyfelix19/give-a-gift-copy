@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mapViewPageNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_inactivegift"
+        android:title="Home" />
+    <item
+        android:id="@+id/friendsPageNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_contact_inactivegift"
+        android:title="Friends" />
+    <item
+        android:id="@+id/profilePageNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_inactivegift"
+        android:title="Profile" />
+</menu>

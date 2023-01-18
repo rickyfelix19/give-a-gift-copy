@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        app:cardCornerRadius="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/gifts_rectangle"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:id="@+id/viewGiftsTitle"
+            style="@style/RobotoOverline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/selectGiftListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

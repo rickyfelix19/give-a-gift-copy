@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cardview"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    android:elevation="12dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:layout_constraintEnd_toEndOf="parent"
+    card_view:layout_constraintStart_toStartOf="parent"
+    card_view:cardCornerRadius="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="center"
+            android:layout_centerHorizontal="true"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="Product Name"
+            android:textSize="14dp" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/productPrice"
+        android:layout_below="@+id/productName"
+        android:layout_width="130dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:text="Product price" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/productPrice"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_less"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="-"
+            />
+
+        <EditText
+            style="@style/InterHeading5"
+            android:id="@+id/productQuantity"
+            android:layout_width="0sp"
+            android:background="@color/primary_light"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textSize="10dp"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_more"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="+" />
+    </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

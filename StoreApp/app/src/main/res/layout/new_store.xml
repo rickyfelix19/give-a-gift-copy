@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main">
+
+
+    <TextView
+        android:id="@+id/createNewStoreTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:gravity="center_horizontal"
+        android:text="Create a new Store"
+        android:textColor="@color/cta_main"
+        android:textSize="33sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/storeNameLayOut"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createNewStoreTitle"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Store name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/storeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/storeCategoryLayout"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storeNameLayOut"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Store category">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/storeCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/selectImageButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storeCategoryLayout"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onSelectImageClick"
+        android:text="Select store image"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/selectImageButton"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Store Image Preview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelButtonEditStore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:onClick="onClickCancel"
+            android:visibility="gone"
+            android:backgroundTint="@color/text_grey"
+            android:text="Cancel"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveNewStoreButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onNewStoreClick"
+            android:text="Crate new store" />
+    </LinearLayout>
+
+</RelativeLayout>

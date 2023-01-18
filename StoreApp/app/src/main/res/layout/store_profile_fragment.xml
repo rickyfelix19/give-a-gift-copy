@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.StoreFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_main"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/RobotoOverline"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:gravity="center"
+            android:text="MY PROFILE"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/profile_rectangle"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/profileUserInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profileUserNameText"
+                    style="@style/InterHeading5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profilePictureCardView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:elevation="12dp"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:id="@+id/profilePictureInProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Store profile image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_businessprofile_inactivegift" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profileStatsBox"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/profileUserInformation"
+                android:background="@drawable/profile_rectangle_stats"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/storePendingGiftsLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/storePendingGifts"
+                        style="@style/InterPageTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/RobotoCaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peding Gifts"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/storeCompletedGiftsLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/storeCompletedGifts"
+                        style="@style/InterPageTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        style="@style/RobotoCaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completed gifts"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/profile_rectangle"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="20dp"
+            android:paddingStart="40dp">
+
+            <TextView
+                android:id="@+id/profileSettingsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.03"
+                android:text="Settings"
+                android:textColor="@color/text_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profileEditProfileButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileSettingsText"
+                android:text="Edit store"
+                android:textColor="@color/black"
+                app:icon="@drawable/ic_editgift"
+                app:iconTint="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profileChangeStoreButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileEditProfileButton"
+                android:text="Change store"
+                android:textColor="@color/black"
+                app:icon="@drawable/ic_businessprofile_inactivegift"
+                app:iconTint="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profileChangeStoreLocation"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileChangeStoreButton"
+                android:text="Change location"
+                android:textColor="@color/black"
+                app:icon="@drawable/ic_person_pingift"
+                app:iconTint="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profileDeleteProfileButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileChangeStoreLocation"
+                android:text="Delete store"
+                android:textColor="@color/black"
+                app:icon="@drawable/ic_delete_forevergift"
+                app:iconTint="@color/cta_main" />
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profileLogOutButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginBottom="8dp"
+            android:text="LOG OUT"
+            app:backgroundTint="@color/cta_main"
+            app:cornerRadius="30dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

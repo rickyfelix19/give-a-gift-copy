@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664014357096",
+    "project_id": "give-a-gift",
+    "storage_bucket": "give-a-gift.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664014357096:android:d06ef383e544aaf0c271dd",
+        "android_client_info": {
+          "package_name": "comp5216.sydney.edu.au.customerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664014357096-pfbuv8ivcaaa2ufme4vsoq5n9u9okdmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1ehvCltdk3t7nvzq03cQC2M7ZhhnMdgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664014357096-pfbuv8ivcaaa2ufme4vsoq5n9u9okdmt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

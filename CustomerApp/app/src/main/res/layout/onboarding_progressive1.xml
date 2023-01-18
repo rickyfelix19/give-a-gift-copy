@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black"
+    android:gravity="center"
+    android:onClick="onNext"
+    android:orientation="vertical"
+    android:paddingHorizontal="35dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        style="@style/InterCta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_main" />
+
+    <TextView
+        style="@style/InterSubtitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="We hope you will have an amazing experience using our app. Before we begin, let us introduce it quickly"
+        android:textColor="@color/primary_main" />
+
+</LinearLayout>

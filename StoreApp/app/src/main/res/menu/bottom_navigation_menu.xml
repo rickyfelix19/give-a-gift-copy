@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/scanPageNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_scan_inactivegift"
+        android:title="Scan" />
+    <item
+        android:id="@+id/productPageNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_product_inactivegift"
+        android:title="Products" />
+    <item
+        android:id="@+id/staffPageNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_staffs_inactivegift"
+        android:title="Staff" />
+    <item
+        android:id="@+id/storePageNav"
+        android:enabled="true"
+        android:icon="@drawable/ic_businessprofile_inactivegift"
+        android:title="Store" />
+</menu>

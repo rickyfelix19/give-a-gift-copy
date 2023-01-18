@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black">
+
+    <TextView
+        android:id="@+id/selectStoreText"
+        style="@style/InterHeading5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Select a Store"
+        android:textColor="@color/primary_light" />
+
+    <ListView
+        android:id="@+id/selectStoreListView"
+        android:layout_width="match_parent"
+        android:layout_height="562dp"
+        android:layout_above="@id/newStoreButton"
+        android:layout_below="@id/selectStoreText"
+        android:orientation="vertical" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/newStoreButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onNewStoreClick"
+        android:text="New Store"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/primary_light" />
+
+</RelativeLayout>

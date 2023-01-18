@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CustomerApp</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Cancel">Cancel</string>
+    <string name="dialog_resetpassword_title">Reset password</string>
+    <string name="dialog_resetpassword_msg">Are you sure that you want to reset the password?</string>
+    <string name="dialog_cancel_resetpassword_title">Cancel reset password</string>
+    <string name="dialog_cancel_resetpassword_msg">Are you sure to cancel this reset of password?</string>
+    <string name="profile_name_string">Hello, %1$s!</string>
+    <string name="profile_gifts_to_collect">%1$d Gifts to collect</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="map_key">AIzaSyBXWC__eNcpjKTWkVNYcPxrmF3G37Gp78w</string>
+    <string name="dismiss_text">Dismiss</string>
+    <string name="friend_name_string">%1$s %2$s</string>
+</resources>

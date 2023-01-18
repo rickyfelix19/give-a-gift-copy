@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- New design colors    -->
+    <color name="background_white">#fefefe</color>
+    <color name="tertiary">#142f64</color>
+    <color name="background_main">#f8f1e9</color>
+    <color name="primary_light">#ffd99f</color>
+    <color name="background_black">#121212</color>
+    <color name="cta_main">#f6554d</color>
+    <color name="text_white">#eeeeee</color>
+    <color name="cta_light">#ffbaba</color>
+    <color name="text_black">#333333</color>
+    <color name="text_grey">#7c7875</color>
+    <color name="primary_main">#fabb5a</color>
+    <color name="m_3_sys_light_outline">#79747e</color>
+    <color name="m_3_sys_light_surface">#fffbfe</color>
+    <color name="m_3_sys_light_on_surface">#1c1b1f</color>
+    <color name="m_3_sys_light_on_surface_variant">#49454f</color>
+</resources>

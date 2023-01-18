@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        app:cardCornerRadius="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/rectangle_4"
+        android:gravity="center"
+        android:layout_marginBottom="45dp">
+        <TextView
+            style="@style/RobotoOverline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CART DETAILS"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:paddingHorizontal="24dp"
+        android:layout_marginBottom="48dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/credit_card">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="47dp"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/InterSubtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="17dp"
+            android:hint="Cardholder Name"/>
+
+        <EditText
+            style="@style/InterSubtitle1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="21dp"
+            android:hint="Card Number"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/InterSubtitle1"
+                android:layout_width="157dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="47dp"
+                android:hint="Expiry Date"/>
+            <EditText
+                style="@style/InterSubtitle1"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:hint="CVV"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingHorizontal="24dp">
+
+        <LinearLayout
+            style="@style/TextStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/rectangle_5"
+            android:onClick="onMakePayment"
+            >
+
+            <TextView
+                style="@style/TextStyle3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="PROCEED PAYMENT" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@color/background_main">
+    </View>
+
+    <TextView
+        style="@style/RobotoOverline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="47dp"
+        android:gravity="center"
+        android:textColor="#616161"
+        android:translationZ="90dp"
+        android:foregroundGravity="top"
+        android:text="choose your gift (2/2)" />
+
+    <TextView
+        style="@style/InterHeading5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top"
+        android:layout_marginBottom="15dp"
+        android:background="@color/background_main"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Select Product(s)"
+        android:textColor="#EF5350" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_below="@+id/title"
+        android:background="@color/white"
+        android:horizontalSpacing="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:numColumns="2"
+        android:orientation="horizontal"
+        android:verticalSpacing="40dp"></GridView>
+
+
+
+    <!--TextView
+        android:id="@+id/totalprice"
+        style="@style/InterSubtitle2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/gridView"
+        android:background="@color/background_main"
+        android:gravity="right"
+        android:text="Total Price: \t\t\t\t\t\t 0.00$"
+        android:textSize="20dp"></TextView-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:paddingHorizontal="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/totalprice"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total Price: \t\t\t\t\t\t 0.0$"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:text="CHECK OUT"
+            app:cornerRadius="20dp"
+            android:id="@+id/checkout"
+            app:strokeColor="@color/primary_light" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

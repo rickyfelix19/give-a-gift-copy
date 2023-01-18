@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ScanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_main"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="389dp">
+
+            <com.budiyev.android.codescanner.CodeScannerView
+                android:id="@+id/qr_scanner_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/InterPageTitle"
+            android:layout_width="246dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="29dp"
+            android:gravity="center"
+            android:text="Scan QR Code" />
+
+        <TextView
+            style="@style/InterSubtitle1"
+            android:layout_width="246dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Hold the code inside the frame, it will be scanned automatically" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THIS IS THE LINEAR BOTTOM LAYOUT"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        -->
+    </LinearLayout>
+</FrameLayout>
